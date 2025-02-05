@@ -1,2 +1,7 @@
+@import url('');
 @import "tailwindcss";
 @plugin "daisyui";
+
+.poppins {
+    font-family: "Poppins", serif;
+}

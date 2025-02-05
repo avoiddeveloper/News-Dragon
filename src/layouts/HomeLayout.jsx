@@ -1,17 +1,27 @@
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
+import Navbar from "../components/Navbar";
 
 const HomeLayout = () => {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto poppins">
+
             <header>
                 <Header></Header>
                 <section>
                     <LatestNews></LatestNews>
                 </section>
             </header>
-            <nav></nav>
-            <main></main>
+
+            <nav>
+                <Navbar></Navbar>
+            </nav>
+
+            <main className="pt-5 grid grid-cols-12 gap-3">
+                <aside className="col-span-3">Left Navbar</aside>
+                <section className="col-span-6">Main Content</section>
+                <aside className="col-span-3">Right Content</aside>
+            </main>
         </div>
     );
 };
